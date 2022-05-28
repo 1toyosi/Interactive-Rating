@@ -7,6 +7,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -36,6 +37,9 @@ Users should be able to:
 ![](design/mobile-design.png)
 ![](design/mobile-thank-you-state.png)
 
+### Links
+
+- Live Link: https://1toyosi.github.io/Interactive-Rating/
 
 ## My process
 
