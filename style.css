@@ -1,0 +1,263 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+/* ? ----Font---- */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: rgb(19, 18, 18);
+}
+
+
+/* ? ----Global----  */
+* {
+  font-family: 'Overpass', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ? ----General---- */
+.first-page,
+.second-page {
+  width: 28rem;
+  height: 28rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  background: linear-gradient(210deg, var(--Dark-Blue), var(--Very-Dark-Blue));
+  margin: 200px auto 40px auto;
+}
+
+
+/* ? ----First Layout---- */
+.star-icon img {
+  background: var(--Dark-Blue);
+  border-radius: 50%;
+  padding: 12px;
+  margin-top: 40px;
+  margin-left: 38px;
+}
+
+.rating-page h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--White);
+  margin-left: 38px;
+  margin-top: 30px;
+}
+
+.rating-page p {
+  font-weight: 400;
+  font-size: 16px;
+  word-spacing: 0px;
+  margin-bottom: 45px;
+  color: var(--Light-Grey);
+  line-height: 25px;
+  word-spacing: 3px;
+  margin-left: 38px;
+}
+
+.rating-page ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin: 0 35px;
+}
+
+.rating-page ul li a {
+  font-size: 15px;
+  color: var(--Medium-Grey);
+  font-weight: 700;
+  border-radius: 50%;
+  padding: 15px 20px;
+  background: var(--Dark-Blue);
+}
+
+.rating-page ul li a:hover {
+  background: var(--Orange);
+  color: var(--White);
+  transition: ease-out 0.4s;
+}
+
+.rating-page ul li a:focus {
+  background: var(--Light-Grey);
+  color: var(--White);
+}
+
+.rating-page button {
+  border-radius: 28px;
+  background: var(--Orange);
+  border: none;
+  color: var(--White);
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 18px 150px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: grid;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.rating-page button:hover {
+  background: var(--White);
+  color: var(--Orange);
+  transition: ease-out 0.4s;
+  cursor: pointer;
+}
+
+
+/*?  ----Second Layout ----*/
+
+.second-page {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.thank-you-page img {
+  display: grid;
+  margin: auto;
+  margin-top: 25px;
+  padding-top: 58px;
+}
+
+.thank-you-page button {
+  color: var(--Orange);
+  background: var(--Dark-Blue);
+  border-radius: 20px;
+  padding: 8px 15px;
+  border: none;
+  font-size: 12px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.thank-you-page h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--White);
+}
+
+.thank-you-page p {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  word-spacing: 0px;
+  margin-bottom: 40px;
+  color: var(--Light-Grey);
+  line-height: 25px;
+  word-spacing: 3px;
+  padding: 0 30px;
+}
+
+
+/* ? Media Query */
+@media screen and (max-width: 375px) {
+
+  .first-page,
+  .second-page {
+    margin-left: 20px;
+    width: 21rem;
+    height: 23rem;
+  }
+
+
+  /* ?-----First Layout----- */
+  .star-icon img {
+    padding: 10px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  .rating-page h2 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+
+  .rating-page p {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 20px;
+    margin-left: 15px;
+    word-spacing: 2px;
+    margin-bottom: 0;
+    padding: 0 11px;
+  }
+
+  .rating-page ul {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  .rating-page ul li a {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rating-page button {
+    font-size: 12px;
+    padding: 14px 120px;
+    letter-spacing: 2px;
+    margin-left: 17px;
+    margin-top: 25px;
+  }
+
+
+  /*? -----Second Layout----- */
+
+  .thank-you-page p {
+    font-size: 14px;
+    line-height: 20px;
+    word-spacing: 3px;
+    padding: 0 18px;
+    margin-top: 18px;
+  }
+
+  .thank-you-page h2 {
+    margin-bottom: 8px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .thank-you-page button {
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .thank-you-page img {
+    width: 130px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+    display: grid;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
+.attribution {
+  margin-top: -65px;
+}
